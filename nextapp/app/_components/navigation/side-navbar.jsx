@@ -4,21 +4,22 @@ import Link from "next/link";
 
 // Linking and navigation: https://nextjs.org/docs/app/building-your-application/routing/linking-and-navigating
 
-const links = [
-  {
-    name: "Home",
-    href: "/",
-    icon: null,
-  },
-  {
-    name: "Prosjekter",
-    href: "/projects",
-    icon: null,
-  },
-];
+
 
 export default function SideNavBar() {
   const pathname = usePathname();
+  const links = [
+    {
+      name: "Home",
+      href: "/",
+      icon: null,
+    },
+    {
+      name: "Prosjekter",
+      href: "/projects",
+      icon: null,
+    },
+  ];
 
   return (
     <>
@@ -35,18 +36,16 @@ export default function SideNavBar() {
             >
               {links.map((link) => {
                 // const LinkIcon = link.icon;
+                const pageOrFalse = pathname === link.href ? "page" : "false";
+                // Set className to "active" if the page URL pathname equals href.
+                const activeOrNavlink = pathname === link.href ? "active" : "nav-link";
                 return (
                   <Link
-                    // Set className to "active" if the page URL pathname equals href.
-                    className={`${
-                      pathname === link.href ? "active" : "nav-link"
-                    } d-inline-block`}
-                    aria-current={`${
-                      pathname === link.href ? "page" : "false"
-                    }`}
+                    key={link.href}
+                    className='${activeOrNavlink} d-inline-block'
+                    aria-current={pageOrFalse}
                     href={link.href}
                   >
-                    {/* <LinkIcon className="link-icon" /> */}
                     {link.name}
                   </Link>
                 );
