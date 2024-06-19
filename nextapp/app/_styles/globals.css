@@ -11,9 +11,9 @@
     --card-border-rgb: 131, 134, 135;
 
     --page-content-bg-color: none;
-    --link-color: #1b5268;
+    /* --link-color: #1b5268; */
     --sidebar-bg-color: #1d638ba4;
-    --sidebar-non-link-color: #f6f8fa;
+    /* --sidebar-non-link-color: #f6f8fa; */
 
     --near-white: #f2f2f2;
     --near-black: #222;
@@ -95,7 +95,7 @@
 a {
     color: var(--blue-midnight);
     text-decoration: none;
-  }
+  } */
 
 /* @media (prefers-color-scheme: dark) {
     html {
@@ -106,9 +106,9 @@ a {
 /* ------------------------------------------------ */
 
 
-* {
-    /* border: 0.5px solid black; */
-}
+/* * {
+    border: 0.5px solid black;
+} */
 
 
 h2 {
@@ -162,7 +162,7 @@ p {
 #sidebar {
     background-color: var(--blue3);
     border-right: 2px solid var(--blue5);
-    color: var(--sidebar-non-link-color);
+    color: var(--near-white);
     min-height: 93vh;
     min-width: 200px;
     padding: 2rem 0 0px 1rem;
@@ -177,24 +177,31 @@ header a {
 
 /* nav-links */
 #sidebar a {
-    color: var(--near-white);
-    display: block; /* whole link area clickable (not just text) */
-    font-size: 20px;
+    /* display: block; whole link area clickable (not just text) */
+    font-size: 1.6rem;
     letter-spacing: 0.08rem;
     padding: 0.5rem 2rem;
     text-decoration: none;
     width: 100%;
 }
-
+#sidebar .active {
+  color: inherit;
+  background-color: var(--blue4);
+}
+#sidebar a.level-2 {
+  padding-left: 3rem;
+  font-size: 1.2rem;
+}
+#sidebar a.level-3 {
+  padding-left: 4rem;
+  font-size: 1rem;
+}
 #sidebar a:hover {
     color: inherit;
     background-color: var(--blue-tiffany);
 }
 
-.active {
-    color: inherit;
-    background-color: var(--blue4);
-}
+
 
 #sykehistorie-1 {
     padding: 2rem 0;
@@ -202,8 +209,9 @@ header a {
 }
 
 hr {
-    padding: 0 1rem;
-    width: 70%;
+    padding-left: 20%;
+    width: 50%;
+    text-justify: auto;
 }
 
 
@@ -225,3 +233,28 @@ hr {
       overflow: auto;
     }
   } */
+
+
+  /* Swimlane */
+  svg {
+    background-color: wheat;
+  }
+  .swimlane { 
+    fill: rgb(238, 238, 238); 
+  }
+  .event { 
+    fill: steelblue; 
+  }
+  .label { 
+    font-size: 12px; 
+    text-anchor: middle; 
+    fill: rgb(43, 185, 131);
+  }
+  .wb {
+    background-color: wheat;
+    fill: #1b5268;
+  }
+
+  #r1 {
+    border: 1px solid blue;
+  }
