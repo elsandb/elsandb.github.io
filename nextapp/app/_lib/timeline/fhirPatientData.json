@@ -1,0 +1,412 @@
+[
+    {
+    "resourceType": "Patient",
+    "id": "patient-001",
+    "birthDate": "1949-03-12",
+    "gender": "female",
+    "address": [
+      {
+        "line": ["Fariytale Rode 1234"],
+        "city": "Faraway city",
+        "postalCode": "0000",
+        "country": "The North Pole"
+      }
+    ],
+    "contact": [
+      {
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+                "code": "C",
+                "display": "Emergency Contact"
+              }
+            ]
+          }
+        ],
+        "name": {
+          "family": "Nissen",
+          "given": ["Jule"]
+        },
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "12345678",
+            "use": "home"
+          }
+        ],
+        "address": {
+          "line": ["Fariytale Rode 1234"],
+          "city": "Faraway city",
+          "state": "Stat",
+          "postalCode": "0000",
+          "country": "The North Pole"
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "FamilyMemberHistory",
+    "id": "fmh-001",
+    "status": "completed",
+    "patient": {
+      "reference": "Patient/patient-001"
+    },
+    "relationship": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code": "FTH",
+          "display": "Father"
+        }
+      ]
+    },
+    "bornDate": "1970-06-20",
+    "condition": [
+      {
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "16114001",
+              "display": "Normal pregnancy"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "FamilyMemberHistory",
+    "id": "fmh-002",
+    "status": "completed",
+    "patient": {
+      "reference": "Patient/patient-001"
+    },
+    "relationship": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code": "FTH",
+          "display": "Father"
+        }
+      ]
+    },
+    "bornDate": "1973-08-15",
+    "condition": [
+      {
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "16114001",
+              "display": "Normal pregnancy"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "FamilyMemberHistory",
+    "id": "fmh-003",
+    "status": "completed",
+    "patient": {
+      "reference": "Patient/patient-001"
+    },
+    "relationship": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code": "FTH",
+          "display": "Father"
+        }
+      ]
+    },
+    "bornDate": "1976-09-30",
+    "condition": [
+      {
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "16114001",
+              "display": "Normal pregnancy"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "Condition",
+    "id": "condition-001",
+    "clinicalStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        }
+      ]
+    },
+    "verificationStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        }
+      ]
+    },
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+            "code": "encounter-diagnosis",
+            "display": "Encounter Diagnosis"
+          }
+        ]
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "44054006",
+          "display": "Diabetes mellitus type 2"
+        }
+      ]
+    },
+    "subject": {
+      "reference": "Patient/patient-001"
+    },
+    "onsetDateTime": "2000-01-10",
+    "recordedDate": "2000-01-10"
+  },
+  {
+    "resourceType": "Condition",
+    "id": "condition-002",
+    "clinicalStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        }
+      ]
+    },
+    "verificationStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        }
+      ]
+    },
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+            "code": "encounter-diagnosis",
+            "display": "Encounter Diagnosis"
+          }
+        ]
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "38341003",
+          "display": "Hypertension"
+        }
+      ]
+    },
+    "subject": {
+      "reference": "Patient/patient-001"
+    },
+    "onsetDateTime": "2005-03-05",
+    "recordedDate": "2005-03-05"
+  },
+  {
+    "resourceType": "Condition",
+    "id": "condition-003",
+    "clinicalStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "resolved",
+          "display": "Resolved"
+        }
+      ]
+    },
+    "verificationStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        }
+      ]
+    },
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+            "code": "encounter-diagnosis",
+            "display": "Encounter Diagnosis"
+          }
+        ]
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "233604007",
+          "display": "Pneumonia"
+        }
+      ]
+    },
+    "subject": {
+      "reference": "Patient/patient-001"
+    },
+    "onsetDateTime": "2018-11-12",
+    "abatementDateTime": "2018-11-22",
+    "recordedDate": "2018-11-12"
+  },
+  {
+    "resourceType": "Encounter",
+    "id": "encounter-001",
+    "status": "finished",
+    "class": {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "code": "IMP",
+      "display": "inpatient encounter"
+    },
+    "type": [
+      {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "183807002",
+            "display": "Inpatient stay for hypertension"
+          }
+        ]
+      }
+    ],
+    "subject": {
+      "reference": "Patient/patient-001"
+    },
+    "period": {
+      "start": "2010-01-25",
+      "end": "2010-01-28"
+    },
+    "reasonCode": [
+      {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "59621000",
+            "display": "Hypertensive crisis"
+          }
+        ]
+      }
+    ],
+    "hospitalization": {
+      "admitSource": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/admit-source",
+            "code": "emd",
+            "display": "Emergency Department"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "resourceType": "Encounter",
+    "id": "encounter-002",
+    "status": "finished",
+    "class": {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "code": "IMP",
+      "display": "inpatient encounter"
+    },
+    "type": [
+      {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "183807002",
+            "display": "Inpatient stay for diabetes mellitus type 2"
+          }
+        ]
+      }
+    ],
+    "subject": {
+      "reference": "Patient/patient-001"
+    },
+    "period": {
+      "start": "2015-03-15",
+      "end": "2015-03-17"
+    },
+    "reasonCode": [
+      {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "46635009",
+            "display": "Diabetes mellitus type 2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Encounter",
+    "id": "encounter-003",
+    "status": "finished",
+    "class": {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "code": "IMP",
+      "display": "inpatient encounter"
+    },
+    "type": [
+      {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "183807002",
+            "display": "Inpatient stay for pneumonia"
+          }
+        ]
+      }
+    ],
+    "subject": {
+      "reference": "Patient/patient-001"
+    },
+    "period": {
+      "start": "2018-11-12",
+      "end": "2018-11-22"
+    },
+    "reasonCode": [
+      {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "233604007",
+            "display": "Pneumonia"
+          }
+        ]
+      }
+    ]
+  }
+]
