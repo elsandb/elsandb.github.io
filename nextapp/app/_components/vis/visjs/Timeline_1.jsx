@@ -155,7 +155,7 @@ export default function Visjs1() {
 
     // Create a Timeline
     new Timeline(container, items, options, groups);
-  }, [visRef, DataSet]);
+  }, [visRef]);
 
   return (<div ref={visRef} id="visualization"></div>);
 }
