@@ -169,7 +169,6 @@ export default function page() {
               width="100%"
               height="550px"
               id="eForm-fields-tree"
-              display="grid"
               position="relative"
               className="embed-responsive-item border"
             />
