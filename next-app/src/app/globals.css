@@ -5,6 +5,7 @@
 :root {
   --background: #f8f8f8;
   --foreground: #171717;
+  --foreground2: #333333;
   --blue3: hsl(203, 34%, 53%);
   --blue4: #417395;
   --blue-green-45: hsl(186, 30%, 45%);
@@ -67,6 +68,7 @@ iframe {
 }
 
 .navbar a {
+  color: var(--foreground2);
   font-size: 1.2rem;
   font-weight: 400;
   letter-spacing: 0.08rem;
@@ -87,6 +89,7 @@ iframe {
   pointer-events: none;
   text-decoration: none;
 }
+
 .navbar a:hover {
   text-decoration: underline;
 }
