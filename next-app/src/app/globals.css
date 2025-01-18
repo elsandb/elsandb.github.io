@@ -16,8 +16,10 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --foreground2: #e5e4e4;
     --blue4: hsl(204, 39%, 42%);
     --blue3: hsl(203, 34%, 53%);
+    --orange-55: hsl(24, 88%, 58%);
   }
 }
 
@@ -91,7 +93,7 @@ iframe {
 }
 
 .navbar a:hover {
-  color: var(--foreground);
+  color: var(--foreground2);
   text-decoration: underline;
 }
 .navbar a.level-2 {
