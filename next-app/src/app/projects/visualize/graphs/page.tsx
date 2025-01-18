@@ -67,7 +67,7 @@ export default function page() {
             Task 1 can be further devided into two parts: get an overview of (1A) the structure of the XML files, which is an hierarchical tree structure, and (1B) the structure of the actual data contained in the files - which could be organized in tables and relations between tables. Here, we&apos;ll focus on the XML-structure of eForms, and how it can be visualized.
           </p>
           {/* Summary */}
-          <div className='fs-6 bg-light pt-3 pb-2 px-5'>
+          <div className='fs-6 pt-3 pb-2 px-5'>
             <p>
               <strong>To summarize, we need to:</strong>
             </p>
