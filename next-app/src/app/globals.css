@@ -91,6 +91,7 @@ iframe {
 }
 
 .navbar a:hover {
+  color: var(--foreground);
   text-decoration: underline;
 }
 .navbar a.level-2 {
