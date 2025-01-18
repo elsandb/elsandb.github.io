@@ -20,7 +20,7 @@
   /* font-family: var(--font-geist-sans); */
 }
 
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
   .page {
     --gray-rgb: 255, 255, 255;
     --gray-alpha-200: rgba(var(--gray-rgb), 0.145);
@@ -29,7 +29,7 @@
     --button-primary-hover: #ccc;
     --button-secondary-hover: #1a1a1a;
   }
-} */
+}
 
 /* .main {
   display: flex;
