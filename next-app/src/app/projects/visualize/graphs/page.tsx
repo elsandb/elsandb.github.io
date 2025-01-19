@@ -44,12 +44,13 @@ export default function page() {
       </pre> */}
 
       <div className="row justify-content-center fw-light fs-6 pt-4">
-        <div className="col-sm-11 col-md-10 col-xl-9 text-start">
-
-          <h1 
+        <div className="col-sm-11 col-md-10 col-xl-9 text-start pt-2">
+          <h1
             className="fs-6 orange-55 fw-normal"
             style={{ letterSpacing: "0.1rem" }}>
             Visualization of hierarchies
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <span className='text-secondary fs-6 pb-4'>2025-01-19</span>
           </h1>
           <p className='fs-5 blue-green-45'>
             When working with complex data structures with a lot of nesting, it is useful to visualize the structures to get an overview of the data hierarchy.
@@ -104,8 +105,8 @@ export default function page() {
           </details>
           <p className='pt-3'>We see the resulting graph and tree charts below.</p>
 
-          
-          <h3  className='pt-3 fs-5'>Graph chart</h3>
+
+          <h3 className='pt-3 fs-5'>Graph chart</h3>
           <ul className='list-unstyled fw-light ms-3'>
             <li>💡 Click and drag to navigate the graph</li>
             <li>💡 Scroll wheel to zoom in/out</li>
@@ -115,13 +116,13 @@ export default function page() {
       {/* Graph chart */}
       <div className="row justify-content-center">
         <div className="col-sm-11 col-md-10">
-          <Iframe 
+          <Iframe
             url="/projects/visualize/eForm-fields/charts/eForm-fields-graph-2024-11-08.html"
             width="100%"
             height="800px"
             id="eForm-fields-graph"
             scrolling="no"
-            className="embed-responsive-item border"/>
+            className="embed-responsive-item border" />
         </div>
       </div>
 
