@@ -21,7 +21,7 @@ export const links: LinkObj[] = [
     href: "/projects/visualize/",
     sublinks: [
       {
-        name: "Trees & graphs",
+        name: "Hierarchies",
         href: "/projects/visualize/graphs"
       }
     ]
