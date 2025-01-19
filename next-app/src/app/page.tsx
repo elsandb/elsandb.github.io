@@ -49,11 +49,13 @@ export default function Home() {
           {/* BODY TEXT */}
           <div className="col-sm-9 pt-4 text-start">
             <p>
-              After years of diving into anatomy and pathology I found myself drawn to the world of code and data, where I could use my logical and analytical abilities and love for problem solving to create something fun and (sometimes) useful.
+              After years of diving into anatomy and pathology I was drawn to the world of code and data, where I could use my logical and analytical abilities and love for problem solving to create something fun and (sometimes) useful.
             </p>
             <p>
-              I am curious and like to explore and learn new tools and technologies. The last years I have dived into several programming languages, libraries, and frameworks, including Python, JavaScript, and React (Next.js). I have also worked with data science (extracting, cleaning, transforming and visualizing data), database development (PostgreSQL) and large language models (LlamaIndex and LangChain).
+              I am curious and like to explore and learn new tools. The last years I have learned and worked with several programming languages, libraries, and frameworks, including Python (pandas, matplotlib, plotly), JavaScript, and React (Next.js, TypeScript). After getting a database development certification from freeCodeCamp.org, I know my way around in a SQL database. I have worked professionally as a data analyst - extracting, cleaning, transforming and visualizing data, and also worked a bit with large language models (LlamaIndex and LangChain) to extract data from unstructured text.
             </p>
+
+            <p>I made this site with Next.js and Bootstrap5. It will soon contain a collection of some of the projects I have worked on.</p>
           </div>
 
         </div>

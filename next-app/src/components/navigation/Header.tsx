@@ -15,7 +15,7 @@ export default function Header() {
           border-bottom
         `}
         >
-          <div className="container-fluid">
+          <div className="container-fluid align-items-center">
             {/* Top navbar */}
             <div className="d-flex align-items-center font-mono">
               <div className="mr-auto">
@@ -49,6 +49,7 @@ export default function Header() {
                   @elsandb
                 </h4>
               </a>
+            <p className="fw-light fs-5 ps-5 pt-2">🔧 Work in progress 🔧</p>
             </div>
 
             {/* Offcanvas navbar */}
