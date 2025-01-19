@@ -6,7 +6,7 @@ export default function page() {
   return (<>
     <div className="d-grid p-2 p-sm-3 p-md-4 text-center text-sm-start">
       <div className="row justify-content-center fw-light fs-6">
-        <div className="col-sm-11 col-md-10 col-xl-9 border*">
+        <div className="col-sm-11 col-md-10 col-xl-9">
           {/* INTRO */}
           <div className="row align-items-center pt-4">
             {/* Intro text */}
