@@ -28,8 +28,7 @@ export default function Home() {
               </h1>
               <p>
                 <code className="fs-5 blue-green-45">
-                  Yet another self-taught developer and data scientist,
-                  with an M.D. degree and a yellow mountain bike
+                  Yet another self-taught developer and data scientist, with an M.D. degree and a yellow mountain bike
                 </code>
               </p>
             </div>
@@ -47,17 +46,15 @@ export default function Home() {
             </div>
           </div>
           {/* BODY TEXT */}
-          <div className="col-sm-9 pt-4 text-start">
+          <div className="col-sm-9 pt-4 text-start fs-6">
             <p>
-              After years of diving into anatomy and pathology I was drawn to the world of code and data, where I could use my logical and analytical abilities and love for problem solving to create something fun and (sometimes) useful.
+              After years of diving into anatomy and pathology I was drawn to the world of code and data, where I could use my love for problem solving to create something fun and (sometimes) useful.
             </p>
             <p>
-              I am curious and like to explore and learn new tools. The last years I have learned and worked with several programming languages, libraries, and frameworks, including Python (pandas, matplotlib, plotly), JavaScript, and React (Next.js, TypeScript). After getting a database development certification from freeCodeCamp.org, I know my way around in a SQL database. I have worked professionally as a data analyst - extracting, cleaning, transforming and visualizing data, and also worked a bit with large language models (LlamaIndex and LangChain) to extract data from unstructured text.
+              I am curious and like to explore and learn new tools and technologies. The past years I have learned and worked with several programming languages, libraries and frameworks, including Python (pandas, matplotlib, plotly, flask, LlamaIndex, LangChain) and JavaScript (react, next.js, TypeScript). I am especially interested in the use of large language models (LLMs) for extraction of data from unstructured text.
             </p>
-
-            <p>I made this site with Next.js and Bootstrap5. It will soon contain a collection of some of the projects I have worked on.</p>
+            <p>I made this site with Next.js and Bootstrap5. It will - sooner or later - contain a collection of some of my hobby projects.</p>
           </div>
-
         </div>
       </div>
     </div>
