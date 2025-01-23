@@ -6,16 +6,10 @@ export default function Header() {
   return (
     <div id="navbar-top" className="row">
       <div className="col">
-        <nav
-          // id="navbar-top"
-          className={`
-          navbar
-          bg-body-tertiary
-          fixed-top
-          border-bottom
-        `}
-        >
+        {/* TOP AND OFFCANVAS NAVBAR */}
+        <nav className="navbar bg-body-tertiary fixed-top border-bottom">
           <div className="container-fluid align-items-center">
+
             {/* Top navbar */}
             <div className="d-flex align-items-center font-mono">
               <div className="mr-auto">
@@ -61,29 +55,20 @@ export default function Header() {
               <div className="offcanvas-header">
                 {/* Logo */}
                 <h5 
-                  className="offcanvas-title" 
-                  id="offcanvasNavbarLabel"
-                >
+                  className="offcanvas-title logo-color" 
+                  id="offcanvasNavbarLabel">
                   @elsandb
                 </h5>
-
                 {/* Button: close */}
                 <button 
                   type="button" 
                   className="btn-close" 
                   data-bs-dismiss="offcanvas" 
-                  aria-label="Close" 
-                />
+                  aria-label="Close" />
               </div>
 
               <div className="offcanvas-body">
-                <ul className="
-                  navbar-nav 
-                  justify-content-start* 
-                  flex-grow-1 
-                  pe-3 
-                  border
-                ">
+                <ul className="navbar-nav flex-grow-1 pe-3">
                   {renderLinks(links)}
                   {/* <li className="nav-item">
                     <a 
@@ -93,13 +78,9 @@ export default function Header() {
                         Home
                     </a>
                   </li> */}
-
-
                 </ul>
-
               </div>
             </div>
-
           </div>
         </nav>
       </div>
