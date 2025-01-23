@@ -49,7 +49,6 @@ export default function Header() {
                   @elsandb
                 </h4>
               </a>
-            <p className="fw-light fs-5 ps-5 pt-2">🔧 Work in progress 🔧</p>
             </div>
 
             {/* Offcanvas navbar */}

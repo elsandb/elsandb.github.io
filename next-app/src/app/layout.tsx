@@ -39,8 +39,11 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <div className="root-container container-fluid">
-
-          <div className="page-wrapper row pt-2 pb-2">
+          <div className="row pt-5 text-center text-md-end">
+            <div className="col"></div>
+            <p className="fw-light orange-55 fs-6 pt-2 mb-0">🔧 Work in progress🔧</p>
+          </div>
+          <div className="page-wrapper row pt-2* pb-2">
             {/* HEADER */}
             <Header />
             {/* col - SIDEBAR */}
@@ -48,7 +51,7 @@ export default function RootLayout({
               <SideNavBar />
             </div>
             {/* col - MAIN */}
-            <div className="col d-flex pt-5 ps-0 pe-0">
+            <div className="col d-flex pt-5* ps-0 pe-0">
               <main className="w-100">
                 {children}
               </main>
