@@ -1,0 +1,28 @@
+/* Override Bootstrap CSS variables */
+:root {
+    --bs-light-text-emphasis: hsl(0, 0%, 53%);
+    --bs-primary-text-emphasis: hsl(186, 30%, 45%);
+    --bs-warning-text-emphasis: hsl(24, 85%, 55%);
+}
+.lead {
+    color: var(--bs-primary-text-emphasis);
+    font-weight: 200;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        /* --bs-body-bg: #242424; */
+        --bs-light-text-emphasis: hsl(0, 1%, 50%);
+        --bs-primary-text-emphasis: hsl(197, 39%, 55%);
+        --bs-warning-text-emphasis: hsl(37, 80%, 42%);
+    }
+}
+
+.fw-light {
+    font-weight: 200!important
+}
+.fs-6 {
+    font-size: calc(1rem + 0.1vw)!important;
+    letter-spacing: calc((1rem + 0.1vw) / 50)!important;
+    /* letter-spacing: 0.07rem; */
+} 

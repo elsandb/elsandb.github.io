@@ -26,10 +26,10 @@ export default function RootLayout({
       <body>
         <div className="root-container container-fluid">
           <div id="work-in-progress-row" className="row pt-5 text-center text-md-end">
-            <div className="col"></div>
-            <p className="fw-light* text-primary orange-55 fs-6 pt-2 mb-0">🔧 Work in progress🔧</p>
+            <p className="text-secondary pt-2 mb-0">
+            🔧 Work in progress 🔧</p>
           </div>
-          <div className="page-wrapper row pt-2* pb-2">
+          <div className="page-wrapper row pb-2">
             {/* HEADER */}
             <Header />
             {/* col - SIDEBAR */}
