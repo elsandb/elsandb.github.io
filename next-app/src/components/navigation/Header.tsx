@@ -11,7 +11,7 @@ export default function Header() {
           <div className="container-fluid align-items-center">
 
             {/* Top navbar */}
-            <div className="d-flex align-items-center font-mono">
+            <div className="d-flex align-items-center">
               <div className="mr-auto">
                 <button
                   id="offcanvas-toggle-btn"
