@@ -1,22 +1,10 @@
 import "./globals.css";
-// import styles from "./page.module.css";
-import localFont from "next/font/local";
 import type { Metadata } from "next";
 import Script from 'next/script';
 
 import SideNavBar from "@/components/navigation/SideNavBar";
 import Header from "@/components/navigation/Header";
-
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+import HtmlThemeProvider from "../utils/html-theme-provider";
 
 export const metadata: Metadata = {
   title: "Elsandb",
@@ -26,9 +14,7 @@ export const viewport = {
   width: 1,
   initialScale: 1,
   userScalable: true,
-  themeColor: 'light'
 }
-
 
 export default function RootLayout({
   children
@@ -36,14 +22,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+    <HtmlThemeProvider>
+      <body>
         <div className="root-container container-fluid">
-          <div className="row pt-5 text-center text-md-end">
-            <div className="col"></div>
-            <p className="fw-light orange-55 fs-6 pt-2 mb-0">🔧 Work in progress🔧</p>
+          <div id="work-in-progress-row" className="row pt-5 text-center text-md-end">
+            <p className="text-secondary pt-2 mb-0">
+            🔧 Work in progress 🔧</p>
           </div>
-          <div className="page-wrapper row pt-2* pb-2">
+          <div className="page-wrapper row pb-2">
             {/* HEADER */}
             <Header />
             {/* col - SIDEBAR */}
@@ -58,6 +44,7 @@ export default function RootLayout({
             </div>
           </div>
         </div>
+
         {/* FOOTER */}
         <footer className="text-center bg-body-tertiary">
           <div className="row pt-5 pb-5 m-0 justify-content-center">
@@ -98,6 +85,6 @@ export default function RootLayout({
         <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/languages/go.min.js" async />
 
       </body>
-    </html>
+    </HtmlThemeProvider>
   );
 }

@@ -1,3 +1,5 @@
+import H1 from "@/components/text/h1";
+import Lead from "@/components/text/lead";
 import Image from "next/image";
 
 export default function Home() {
@@ -21,16 +23,8 @@ export default function Home() {
             </div>
             {/* Intro text */}
             <div className="col-sm-9 col-lg-7" >
-              <h1
-                className="fs-6 fw-normal orange-55"
-                style={{ letterSpacing: "0.1rem" }}>
-                I&apos;m Elisabeth
-              </h1>
-              <p>
-                <code className="fs-5 blue-green-45">
-                  Yet another self-taught developer and data scientist, with an M.D. degree and a yellow mountain bike
-                </code>
-              </p>
+              <H1>I&apos;m Elisabeth</H1>
+              <Lead>Yet another self-taught developer and data scientist, with an M.D. degree and a yellow mountain bike</Lead>
             </div>
             {/* Profile right (on sm-xl screens) */}
             <div className="profile-img col-sm-3 col-md-2 d-none d-sm-block pb-3*" >
