@@ -4,9 +4,10 @@ import Iframe from 'react-iframe';
 import 'highlight.js/styles/github.css';
 // import python from 'highlight.js/lib/languages/python';
 import React from 'react';
-import H1 from '@/components/text/h1';
+// import H1 from '@/components/text/h1';
 import Lead from '@/components/text/lead';
-import PostDate, { PostHeader } from '@/components/text/post-related';
+import { PostHeader } from '@/components/text/post-related';
+// import PostDate, { PostHeader } from '@/components/text/post-related';
 // // Then register the languages you need
 // hljs.registerLanguage('python', python);
 
@@ -48,13 +49,6 @@ export default function page() {
 
       <div className="row justify-content-center fw-light fs-6 pt-4">
         <div className="col-sm-11 col-md-10 col-xl-9 text-start pt-2">
-          {/* <H1>
-            Visualization of hierarchies
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          </H1>
-          <p>
-            <PostDate date={'2025-01-19'}/>
-          </p> */}
           <PostHeader 
             title={'Visualization of hierarchies'} 
             publishedDate={'2025-01-19'}/>

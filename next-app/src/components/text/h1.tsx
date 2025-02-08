@@ -1,4 +1,4 @@
-export default function H1({ children, extraClasses }: any) {
+export default function H1({ children, extraClasses }: { children: React.ReactNode, extraClasses?: string }) {
     return (
         <h1
             className={`txt-h1 fs-6 fw-normal text-warning-emphasis ${extraClasses}`}

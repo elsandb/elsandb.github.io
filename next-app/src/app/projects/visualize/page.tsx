@@ -1,6 +1,5 @@
 import H1 from '@/components/text/h1';
 import Lead from '@/components/text/lead';
-import PostDate from '@/components/text/post-related';
 import Image from 'next/image';
 import Link from 'next/link';
 
