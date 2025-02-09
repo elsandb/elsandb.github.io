@@ -39,7 +39,7 @@ export default function Header() {
               </div>
               {/* Logo */}
               <a className="text-decoration-none" href="/">
-                <h4 className="ps-4 fw-light logo-color">
+                <h4 className="ps-4 fw-light text-light-emphasis">
                   @elsandb
                 </h4>
               </a>
@@ -55,7 +55,7 @@ export default function Header() {
               <div className="offcanvas-header">
                 {/* Logo */}
                 <h5 
-                  className="offcanvas-title logo-color" 
+                  className="offcanvas-title text-light-emphasis" 
                   id="offcanvasNavbarLabel">
                   @elsandb
                 </h5>

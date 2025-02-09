@@ -12,7 +12,7 @@
 @media (prefers-color-scheme: dark) {
     :root {
         /* --bs-body-bg: #242424; */
-        --bs-light-text-emphasis: hsl(0, 1%, 50%);
+        --bs-light-text-emphasis: hsl(0, 0%, 80%);
         --bs-primary-text-emphasis: hsl(197, 39%, 55%);
         --bs-warning-text-emphasis: hsl(37, 80%, 42%);
     }

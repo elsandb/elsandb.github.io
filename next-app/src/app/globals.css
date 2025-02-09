@@ -27,9 +27,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.logo-color {
-  color: rgb(87, 90, 94, 1);
-}
+
 .txt-h1 {
   letter-spacing: "0.1rem";
   /* margin: 0; */
