@@ -18,7 +18,7 @@ export const links: LinkObj[] = [
   // },
   {
     name: "Visualization",
-    href: "/projects/visualize/",
+    href: "/projects/visualize",
     sublinks: [
       {
         name: "Hierarchies",

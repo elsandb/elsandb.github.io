@@ -38,19 +38,22 @@ export function renderLinks(links: LinkObj[], level: number = 1): JSX.Element[] 
 
           <Link
             key={link.href}
-            className={`${isActive ? "active" : "nav-link"} level-${level}`}
+            className={`
+              ${isActive ? "nav-link active" : "nav-link"} 
+              level-${level} 
+              ${level === 1 ? "ps-4 pe-1 pt-0 fs-5" : ""}
+              ${level === 2 ? "ps-5 pe-1 pt-0 fs-6" : ""}
+            `}
             aria-current={isActive ? "page" : undefined}
-            href={link.href}
-          >
+            href={link.href}>
             {link.name}
           </Link>
 
-          { // Sublinks toggle button/icon
+          { // Sublinks toggle button/icon if any sublinks
             link.sublinks &&
-            <i
-              className={`bi ${arrow} arrow-icon`}
-              onClick={() => setIsOpen(!isOpen)}
-            />
+            <i 
+              className={`bi ${arrow} arrow-icon pb-1`}
+              onClick={() => setIsOpen(!isOpen)}/>
           }
         </div>
         { // Render sublinks if they exist
