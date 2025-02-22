@@ -25,10 +25,6 @@ export default function RootLayout({
     <HtmlThemeProvider>
       <body>
         <div className="root-container container-fluid">
-          <div id="work-in-progress-row" className="row pt-5 text-center text-md-end">
-            <p className="text-secondary pt-2 mb-0">
-            🔧 Work in progress 🔧</p>
-          </div>
           <div className="page-wrapper row pb-2">
             {/* HEADER */}
             <Header />
@@ -37,7 +33,7 @@ export default function RootLayout({
               <SideNavBar />
             </div>
             {/* col - MAIN */}
-            <div className="col d-flex pt-5* ps-0 pe-0">
+            <div className="col d-flex pt-5 ps-0 pe-0">
               <main className="w-100">
                 {children}
               </main>
@@ -53,7 +49,7 @@ export default function RootLayout({
               <a className="d-flex align-items-center justify-content-center gap-2"
                 href="https://github.com/elsandb"
                 target="_blank" rel="noopener noreferrer"
-                style={{ color: "#538A90" }}
+                // style={{ color: "#538A90" }}
               >
                 <i aria-hidden className="bi bi-github" />
                 GitHub
@@ -66,7 +62,7 @@ export default function RootLayout({
                 href="https://www.linkedin.com/in/elsandb/"
                 target="_blank" // open in a new window or tab
                 rel="external noopener noreferrer"
-                style={{ color: "#538A90" }}
+                // style={{ color: "#538A90" }}
               >
                 <i aria-hidden className="bi bi-linkedin" />
                 LinkedIn

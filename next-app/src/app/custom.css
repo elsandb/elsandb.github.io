@@ -12,17 +12,14 @@
 @media (prefers-color-scheme: dark) {
     :root {
         /* --bs-body-bg: #242424; */
-        --bs-light-text-emphasis: hsl(0, 1%, 50%);
-        --bs-primary-text-emphasis: hsl(197, 39%, 55%);
+        --bs-light-text-emphasis: hsl(0, 0%, 80%);
+        --bs-primary-text-emphasis: hsl(197, 38%, 63%);
+        /* --bs-primary-text-emphasis: hsl(197, 38%, 63%); */
         --bs-warning-text-emphasis: hsl(37, 80%, 42%);
+        --bs-link-color: #46bfb5;
+        /* --bs-link-color-rgb: 70, 191, 181; */
+        /* --bs-link-color: #46b3bf; */
+        /* --bs-link-color-rgb: 70, 179, 191; */
+        --bs-code-color: #c7a662;
     }
 }
-
-.fw-light {
-    font-weight: 200!important
-}
-.fs-6 {
-    font-size: calc(1rem + 0.1vw)!important;
-    letter-spacing: calc((1rem + 0.1vw) / 50)!important;
-    /* letter-spacing: 0.07rem; */
-} 
