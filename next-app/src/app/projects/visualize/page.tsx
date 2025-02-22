@@ -37,7 +37,7 @@ export default function page() {
                 <div className='col-md pt-3'>
                   <h4>
                     <Link 
-                      href='/projects/visualize/graphs' 
+                      href='/projects/visualize/hierarchies' 
                       className="text-decoration-none text-secondary-emphasis">
                       Visualization of hierarchies
                     </Link>
