@@ -22,7 +22,7 @@ export const links: LinkObj[] = [
     sublinks: [
       {
         name: "Hierarchies",
-        href: "/projects/visualize/graphs"
+        href: "/projects/visualize/hierarchies"
       }
     ]
   },
@@ -37,7 +37,6 @@ export const links: LinkObj[] = [
   //     {
   //       name: "Hvordan lage en tidslinje?",
   //       href: "/projects/timeline/how",
-  //       descr: "What is the best way to make a timeline? Should I use JavaScript or Python? D3 or a 'higher level'-chart-library?",
   //     }
   //   ]
   // }
