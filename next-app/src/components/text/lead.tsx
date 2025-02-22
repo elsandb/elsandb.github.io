@@ -1,7 +1,7 @@
 export default function Lead({ children }: { children: React.ReactNode }) {
     return (
-        <code className="fs-5 fw-light text-primary-emphasis">
+        <p className="fs-5 fw-normal text-primary-emphasis">
             {children}
-        </code>
+        </p>
     );
 }
