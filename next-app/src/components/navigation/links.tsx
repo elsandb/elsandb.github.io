@@ -26,18 +26,4 @@ export const links: LinkObj[] = [
       }
     ]
   },
-  // {
-  //   name: "Pasienter",
-  //   href: "/patients"
-  // },
-  // {
-  //   name: "Tidslinje",
-  //   href: "/projects/timeline",
-  //   sublinks: [
-  //     {
-  //       name: "Hvordan lage en tidslinje?",
-  //       href: "/projects/timeline/how",
-  //     }
-  //   ]
-  // }
 ];
