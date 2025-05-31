@@ -9,6 +9,7 @@ import HtmlThemeProvider from "../utils/html-theme-provider";
 export const metadata: Metadata = {
   title: "Elsandb",
   description: "Personal website, created with Next.js",
+  icons: "/icon.png"
 };
 export const viewport = {
   width: 1,
