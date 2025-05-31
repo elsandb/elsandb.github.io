@@ -14,7 +14,7 @@ export default function SideNavBar(): JSX.Element {
       <nav className="navbar sticky-top">
         {/* Link list */}
         <ul className="navbar-nav flex-grow-1">
-          {links.map((link)=><NavLink link={link}/>)}
+          {links.map((link)=><NavLink link={link} key={link.href}/>)}
         </ul>
       </nav>
     </>

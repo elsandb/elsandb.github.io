@@ -69,7 +69,7 @@ export default function Header() {
 
               <div className="offcanvas-body">
                 <ul className="navbar-nav flex-grow-1 pe-3">
-                  {links.map((link)=><NavLink link={link}/>)}
+                  {links.map((link)=><NavLink link={link} key={link.href}/>)}
                 </ul>
               </div>
             </div>
