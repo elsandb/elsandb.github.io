@@ -3,23 +3,28 @@
     --bs-light-text-emphasis: hsl(0, 0%, 53%);
     --bs-primary-text-emphasis: hsl(186, 30%, 45%);
     --bs-warning-text-emphasis: hsl(24, 85%, 55%);
-}
-.lead {
-    color: var(--bs-primary-text-emphasis);
-    font-weight: 200;
+    --bs-link-color: #349c93;
+    --bs-link-color-rgb: 52, 156, 147;
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        /* --bs-body-bg: #242424; */
         --bs-light-text-emphasis: hsl(0, 0%, 80%);
         --bs-primary-text-emphasis: hsl(197, 38%, 63%);
-        /* --bs-primary-text-emphasis: hsl(197, 38%, 63%); */
         --bs-warning-text-emphasis: hsl(37, 80%, 42%);
-        --bs-link-color: #46bfb5;
-        /* --bs-link-color-rgb: 70, 191, 181; */
-        /* --bs-link-color: #46b3bf; */
-        /* --bs-link-color-rgb: 70, 179, 191; */
+        --bs-link-color: #349c93;
+        --bs-link-color-rgb: 52, 156, 147;
         --bs-code-color: #c7a662;
     }
+}
+
+.form-check-input:checked {
+    background-color: #696969;
+    border-color: #696969;
+}
+
+.form-check-input:focus {
+    border-color: #434343;
+    outline: 0;
+    box-shadow: none;
 }
