@@ -12,10 +12,6 @@ export const links: LinkObj[] = [
     name: "Home",
     href: "/",
   },
-  // {
-  //   name: "Blog",
-  //   href: "/blog",
-  // },
   {
     name: "Visualization",
     href: "/projects/visualize",
@@ -26,18 +22,4 @@ export const links: LinkObj[] = [
       }
     ]
   },
-  // {
-  //   name: "Pasienter",
-  //   href: "/patients"
-  // },
-  // {
-  //   name: "Tidslinje",
-  //   href: "/projects/timeline",
-  //   sublinks: [
-  //     {
-  //       name: "Hvordan lage en tidslinje?",
-  //       href: "/projects/timeline/how",
-  //     }
-  //   ]
-  // }
 ];

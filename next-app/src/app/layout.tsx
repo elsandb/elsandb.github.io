@@ -51,7 +51,6 @@ export default function RootLayout({
                 <Link className="d-flex align-items-center justify-content-center gap-2"
                   href="https://github.com/elsandb"
                   target="_blank" rel="noopener noreferrer"
-                // style={{ color: "#538A90" }}
                 >
                   <i aria-hidden className="bi bi-github" />
                   GitHub
@@ -64,7 +63,6 @@ export default function RootLayout({
                   href="https://www.linkedin.com/in/elsandb/"
                   target="_blank" // open in a new window or tab
                   rel="external noopener noreferrer"
-                // style={{ color: "#538A90" }}
                 >
                   <i aria-hidden className="bi bi-linkedin" />
                   LinkedIn
