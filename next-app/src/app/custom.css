@@ -6,10 +6,6 @@
     --bs-link-color: #349c93;
     --bs-link-color-rgb: 52, 156, 147;
 }
-/* .lead {
-    color: var(--bs-primary-text-emphasis);
-    font-weight: 200;
-} */
 
 @media (prefers-color-scheme: dark) {
     :root {
@@ -22,4 +18,15 @@
         --bs-link-color-rgb: 52, 156, 147;
         --bs-code-color: #c7a662;
     }
+}
+
+.form-check-input:checked {
+    background-color: #696969;
+    border-color: #696969;
+}
+
+.form-check-input:focus {
+    border-color: #434343;
+    outline: 0;
+    box-shadow: none;
 }
