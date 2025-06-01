@@ -5,6 +5,7 @@ import Script from 'next/script';
 import SideNavBar from "@/components/navigation/SideNavBar";
 import Header from "@/components/navigation/Header";
 import HtmlThemeProvider from "../utils/html-theme-provider";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Elsandb",
@@ -47,18 +48,18 @@ export default function RootLayout({
           <div className="row pt-5 pb-5 m-0 justify-content-center">
             {/* GitHub */}
             <div className="col-sm-2">
-              <a className="d-flex align-items-center justify-content-center gap-2"
+              <Link className="d-flex align-items-center justify-content-center gap-2"
                 href="https://github.com/elsandb"
                 target="_blank" rel="noopener noreferrer"
                 // style={{ color: "#538A90" }}
               >
                 <i aria-hidden className="bi bi-github" />
                 GitHub
-              </a>
+              </Link>
             </div>
             {/* LinkedIn */}
             <div className="col-sm-3">
-              <a
+              <Link
                 className="d-flex align-items-center justify-content-center gap-2"
                 href="https://www.linkedin.com/in/elsandb/"
                 target="_blank" // open in a new window or tab
@@ -67,7 +68,7 @@ export default function RootLayout({
               >
                 <i aria-hidden className="bi bi-linkedin" />
                 LinkedIn
-              </a>
+              </Link>
             </div>
           </div>
         </footer>
