@@ -1,26 +1,21 @@
 "use client";
 
 import { useTheme } from "@/utils/theme-provider";
+import { useEffect } from "react";
 
 export const ThemeToggle = () => {
   const { theme, toggleTheme } = useTheme();
-  const isDark = theme === "dark";
+  const checked = theme === "dark"
 
   return (
     <div className="d-inline-flex align-items-center gap-2">
-      <i className="bi bi-sun-fill text-secondary"></i>
-      <div className="form-check form-switch m-0">
-        <input
-          className="form-check-input text-secondary*"
-          type="checkbox"
-          role="switch"
-          id="themeSwitch"
-          checked={isDark}
-          onChange={toggleTheme}
-          aria-label="Switch between light and dark theme."
-        />
-      </div>
-      <i className="bi bi-moon-fill text-secondary"></i>
+      <input type="checkbox" className="btn-check" id="btn-check-light-dark" 
+      onChange={toggleTheme}
+      />
+      <label className="btn border" htmlFor="btn-check-light-dark">
+        <i className="bi bi-sun-fill text-secondary"></i> / &nbsp;
+        <i className="bi bi-moon-fill text-secondary"></i>
+      </label>
     </div>
   );
 };

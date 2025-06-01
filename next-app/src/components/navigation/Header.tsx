@@ -3,6 +3,7 @@ import { links } from "./links";
 import { NavLink } from "./NavLink";
 
 import { ThemeToggle } from "../ThemeToggle";
+import Link from "next/link";
 
 export default function Header() {
   return (
@@ -16,9 +17,9 @@ export default function Header() {
 
 function SiteTitle() {
   return (
-    <a className="text-decoration-none fs-4 text-light-emphasis" href="/">
+    <Link className="text-decoration-none fs-4 text-light-emphasis" href="/">
       @elsandb
-    </a>
+    </Link>
   );
 }
 
