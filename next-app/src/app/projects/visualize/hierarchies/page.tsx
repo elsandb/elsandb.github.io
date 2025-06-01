@@ -10,6 +10,7 @@ export default function page() {
     <div className="d-grid p-2 p-sm-3 p-md-4 text-center text-sm-start">
       <div className="row justify-content-center fw-light fs-6 pt-4">
         <div className="col-sm-11 col-md-10 col-xl-8 text-start pt-2">
+          
           <PostHeader
             title={'Visualization of hierarchies'}
             publishedDate={'2025-01-19'} />

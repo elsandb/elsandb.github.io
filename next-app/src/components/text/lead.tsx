@@ -1,6 +1,15 @@
+import { Roboto } from "next/font/google";
+import { Open_Sans } from "next/font/google";
+
+const roboto = Roboto({
+    weight: ["100", "300"],
+    style: "normal",
+    subsets: ['latin']
+})
+
 export default function Lead({ children }: { children: React.ReactNode }) {
     return (
-        <p className="fs-5 fw-normal text-primary-emphasis">
+        <p className={roboto.className + 'fw-light fs-5'}>
             {children}
         </p>
     );

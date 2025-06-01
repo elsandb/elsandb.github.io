@@ -6,10 +6,10 @@
     --bs-link-color: #349c93;
     --bs-link-color-rgb: 52, 156, 147;
 }
-.lead {
+/* .lead {
     color: var(--bs-primary-text-emphasis);
     font-weight: 200;
-}
+} */
 
 @media (prefers-color-scheme: dark) {
     :root {
