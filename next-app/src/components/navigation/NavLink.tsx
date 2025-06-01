@@ -3,6 +3,20 @@ import { useState } from "react";
 import { usePathname } from "next/navigation";
 import { LinkObj } from "./links";
 
+import Link from "next/link";
+
+declare global {
+  interface Window {
+    bootstrap: any;
+  }
+}
+function handleNavLinkClick() {
+  const offcanvasEl = document.getElementById("offcanvasNavbar");
+  if (offcanvasEl && window.bootstrap) {
+    const bsOffcanvas = window.bootstrap.Offcanvas.getInstance(offcanvasEl);
+    bsOffcanvas?.hide();  // Close offcavas navbar
+  }
+}
 
 export function NavLink({ link, level = 1}: { link: LinkObj; level?: number;}) {
   const [isOpen, setIsOpen] = useState(true);
@@ -13,17 +27,18 @@ export function NavLink({ link, level = 1}: { link: LinkObj; level?: number;}) {
   return (
     <div className="nav-item">
       <div className="d-flex align-items-center justify-content-between me-3">
-        <a
+        <Link
+          href={link.href}
+          onClick={handleNavLinkClick}
           className={`
             ${isActive ? "nav-link active" : "nav-link"} 
             level-${level} 
             ${level === 1 ? "ps-4 pe-1 pt-0 fs-5" : ""}
             ${level === 2 ? "ps-5 pe-1 pt-0 fs-6" : ""}
           `}
-          href={link.href}
         >
           {link.name}
-        </a>
+        </Link>
         {hasSublinks && (
           <i
             className={`bi ${isOpen ? "bi-chevron-down" : "bi-chevron-right"} arrow-icon pb-1`}
