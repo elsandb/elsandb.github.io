@@ -1,12 +1,9 @@
 "use client";
 
 import { useTheme } from "@/utils/theme-provider";
-import { useEffect } from "react";
 
 export const ThemeToggle = () => {
-  const { theme, toggleTheme } = useTheme();
-  const checked = theme === "dark"
-
+  const { toggleTheme } = useTheme();
   return (
     <div className="d-inline-flex align-items-center gap-2">
       <input type="checkbox" className="btn-check" id="btn-check-light-dark" 

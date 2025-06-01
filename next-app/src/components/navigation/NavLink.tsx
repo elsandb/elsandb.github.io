@@ -7,7 +7,12 @@ import Link from "next/link";
 
 declare global {
   interface Window {
-    bootstrap: any;
+    // bootstrap: any;
+    bootstrap?: {
+      Offcanvas: {
+        getInstance: (element: HTMLElement) => { hide: () => void } | null;
+      };
+    };
   }
 }
 function handleNavLinkClick() {
