@@ -53,7 +53,7 @@ export default function page() {
               <span>Show notebook </span>
             </summary>
             <Iframe
-              url="/projects/visualize/eForm-fields/notebooks/vis-eForms-fields-01-clean.html"
+              url="/my_projects/visualize/eForm-fields/notebooks/vis-eForms-fields-01-clean.html"
               width="100%"
               height="3900px"
               id="eForm-fields-notebook" />
@@ -70,7 +70,7 @@ export default function page() {
       <div className="row justify-content-center">
         <div className="col-sm-11 col-md-10">
           <Iframe
-            url="/projects/visualize/eForm-fields/charts/eForm-fields-graph-2024-11-08.html"
+            url="/my_projects/visualize/eForm-fields/my_charts/eForm-fields-graph-2024-11-08.html"
             width="100%"
             height="800px"
             id="eForm-fields-graph"
@@ -91,7 +91,7 @@ export default function page() {
       </div>
       <div className="row justify-content-center">
         <div className="col-sm-11 col-md-10">
-          <Iframe url="/projects/visualize/eForm-fields/charts/eForm-fields-tree-2024-11-08.html"
+          <Iframe url="/my_projects/visualize/eForm-fields/my_charts/eForm-fields-tree-2024-11-08.html"
             width="100%"
             height="1000px"
             id="eForm-fields-tree"
@@ -111,7 +111,9 @@ export default function page() {
           </p>
           {/* Sunburst notebook */}
           <details><summary>Show notebook</summary>
-            <Iframe url="/projects/visualize/eForm-fields/notebooks/eForm-fields-sunburst.html"
+            <Iframe 
+            // url="/eForm-fields-sunburst.html"
+            url="/my_projects/visualize/eForm-fields/notebooks/eForm-fields-sunburst.html"
               width="100%"
               height="550px"
               id="eForm-fields-tree"
@@ -130,7 +132,7 @@ export default function page() {
       <div className="row justify-content-center">
         <div className="col-12">
           <Iframe
-            url="/projects/visualize/eForm-fields/charts/eForm-fields-sunburst-2024-11-09.html"
+            url="/my_projects/visualize/eForm-fields/my_charts/eForm-fields-sunburst-2024-11-09.html"
             width="100%"
             height="1000"
             id="eForm-fields-tree"

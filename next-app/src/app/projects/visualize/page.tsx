@@ -26,7 +26,7 @@ export default function page() {
                 <div className="col-md">
                   <Image
                     className="img-fluid"
-                    src="/projects/visualize/eForm-fields/charts/eForm-fields-project-image.png"
+                    src="/my_projects/visualize/eForm-fields/my_charts/eForm-fields-project-image.png"
                     alt="Image of a graph diagram."
                     style={{ borderRadius: "5%" }}
                     width={300}
