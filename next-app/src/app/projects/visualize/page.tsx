@@ -26,7 +26,7 @@ export default function page() {
                 <div className="col-md">
                   <Image
                     className="img-fluid"
-                    src="/projects/visualize/eForm-fields/charts/eForm-fields-project-image.png"
+                    src="/my_projects/visualize/eForm-fields/my_charts/eForm-fields-project-image.png"
                     alt="Image of a graph diagram."
                     style={{ borderRadius: "5%" }}
                     width={300}
@@ -37,7 +37,7 @@ export default function page() {
                 <div className='col-md pt-3'>
                   <h4>
                     <Link 
-                      href='/projects/visualize/graphs' 
+                      href='/projects/visualize/hierarchies' 
                       className="text-decoration-none text-secondary-emphasis">
                       Visualization of hierarchies
                     </Link>
@@ -50,7 +50,6 @@ export default function page() {
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </div>

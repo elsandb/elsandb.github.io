@@ -3,26 +3,28 @@
     --bs-light-text-emphasis: hsl(0, 0%, 53%);
     --bs-primary-text-emphasis: hsl(186, 30%, 45%);
     --bs-warning-text-emphasis: hsl(24, 85%, 55%);
-}
-.lead {
-    color: var(--bs-primary-text-emphasis);
-    font-weight: 200;
+    --bs-link-color: #349c93;
+    --bs-link-color-rgb: 52, 156, 147;
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        /* --bs-body-bg: #242424; */
-        --bs-light-text-emphasis: hsl(0, 1%, 50%);
-        --bs-primary-text-emphasis: hsl(197, 39%, 55%);
+        --bs-light-text-emphasis: hsl(0, 0%, 80%);
+        --bs-primary-text-emphasis: hsl(197, 38%, 63%);
         --bs-warning-text-emphasis: hsl(37, 80%, 42%);
+        --bs-link-color: #349c93;
+        --bs-link-color-rgb: 52, 156, 147;
+        --bs-code-color: #c7a662;
     }
 }
 
-.fw-light {
-    font-weight: 200!important
+.form-check-input:checked {
+    background-color: #696969;
+    border-color: #696969;
 }
-.fs-6 {
-    font-size: calc(1rem + 0.1vw)!important;
-    letter-spacing: calc((1rem + 0.1vw) / 50)!important;
-    /* letter-spacing: 0.07rem; */
-} 
+
+.form-check-input:focus {
+    border-color: #434343;
+    outline: 0;
+    box-shadow: none;
+}
