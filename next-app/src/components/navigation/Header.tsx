@@ -8,20 +8,19 @@ import Link from "next/link";
 export default function Header() {
   return (
     <header className="border-bottom py-3 px-4 d-flex justify-content-between align-items-center">
-      <MenuButtons />
-      <SiteTitle />
+      {/* <MenuButtons /> */}
+      <Link className="text-decoration-none fs-4 text-light-emphasis" href="/">
+        @elsandb
+      </Link>
+      <Link className="text-decoration-none fs-4 text-light-emphasis" href="/projects">
+        Projects
+      </Link>
+
       <ThemeToggle />
     </header>
   );
 }
 
-function SiteTitle() {
-  return (
-    <Link className="text-decoration-none fs-4 text-light-emphasis" href="/">
-      @elsandb
-    </Link>
-  );
-}
 
 /**
  * Menu toggle buttons for the side navbar and the offcanvas navbar.
