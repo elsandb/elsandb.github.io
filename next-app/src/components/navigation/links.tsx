@@ -22,14 +22,14 @@ export const links: LinkObj[] = [
       }
     ]
   },
-  {
-    name: "Notes",
-    href: "",
-    sublinks: [
-      {
-        name: "Python vs. R",
-        href: "/projects/notes/python-vs-r"
-      }
-    ]
-  }
+  // {
+  //   name: "Notes",
+  //   href: "",
+  //   sublinks: [
+  //     {
+  //       name: "Python vs. R",
+  //       href: "/projects/notes/python-vs-r"
+  //     }
+  //   ]
+  // }
 ];
