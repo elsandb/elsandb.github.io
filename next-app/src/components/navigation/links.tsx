@@ -9,19 +9,27 @@ export type LinkObj = {
 
 export const links: LinkObj[] = [
   {
-    name: "Home",
+    name: "HOME",
     href: "/",
   },
   {
-    name: "Visualization",
-    href: "/projects/visualize",
-    sublinks: [
-      {
-        name: "Hierarchies",
-        href: "/projects/visualize/hierarchies"
-      }
-    ]
+    name: "PROJECTS",
+    href: "/projects",
   },
+  {
+    name: "CONTACT",
+    href: "/contact",
+  },
+  // {
+  //   name: "Visualization",
+  //   href: "/projects/visualize",
+  //   sublinks: [
+  //     {
+  //       name: "Hierarchies",
+  //       href: "/projects/visualize/hierarchies"
+  //     }
+  //   ]
+  // },
   // {
   //   name: "Notes",
   //   href: "",
