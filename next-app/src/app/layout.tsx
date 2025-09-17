@@ -19,36 +19,8 @@ export const viewport = {
 }
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode; }>) {
-  // const setInitialTheme = `
-  //   (function() {
-  //     try {
-  //       const stored = localStorage.getItem('theme');
-  //       const system = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-  //       const theme = stored === 'light' || stored === 'dark' ? stored : system;
-  //       document.documentElement.setAttribute('data-bs-theme', theme);
-  //     } catch (_) {}
-  //   })();
-  // `;
-//   const setInitialTheme = `
-// (function() {
-//                 try {
-//                   var theme = localStorage.getItem('theme');
-//                   if (!theme) {
-//                     var mql = window.matchMedia('(prefers-color-scheme: dark)');
-//                     theme = mql.matches ? 'dark' : 'light';
-//                   }
-//                   document.documentElement.setAttribute('data-bs-theme', theme);
-//                 } catch (e) {
-//                   document.documentElement.setAttribute('data-bs-theme','dark');
-//                 }
-//               })();
-//   `;
   return (
     <html lang="en"> 
-    {/* suppressHydrationWarning> */}
-      {/* <head>
-        <script dangerouslySetInnerHTML={{ __html: setInitialTheme }} />
-      </head> */}
       <body>
         <ThemeProvider>
           <div className="root-container container-fluid">
