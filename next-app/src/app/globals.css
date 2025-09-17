@@ -55,30 +55,29 @@ iframe {
 .navbar a:hover {
   text-decoration: underline;
 }
-/* Select lement after .navbar a */
+/* Select element after .navbar a */
 .navbar a + .arrow-icon:hover {
   cursor: pointer;
 }
 
 /* Sidebar */
-#sidebar {
+/* #sidebar {
   top: 0;
   height: 100vh;
   padding-top: 5rem;
   position: sticky;
   min-width: 13rem;
   max-width: 17rem;
-}
+} */
 
 /* Responsive design - media queries */
 /* For screens larger than 992px*/
-@media (min-width: 992px) {
+/* @media (min-width: 992px) {
   #offcanvas-toggle-btn { display: none; }
-}
+} */
 
-@media (max-width: 991.98px) {
-  /* When screen is smaller than 992px, hide sidebar. */
+/* When screen is smaller than 992px, hide sidebar. */
+/* @media (max-width: 991.98px) {
   #sidebar { display: none; }
   #sidebar-toggle-btn { display: none; }
-  /* #offcanvas-toggle-btn { display: none; } */
-}
+} */
