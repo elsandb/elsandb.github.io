@@ -3,8 +3,8 @@ import type { Metadata } from "next";
 import Script from 'next/script';
 
 // import SideNavBar from "@/components/navigation/SideNavBar";
-import { Header } from "@/components/navigation/Header";
 // import { OffCanvasNavBar } from "@/components/navigation/OffCanvasNavbar";
+import { Header } from "@/components/navigation/Header";
 import Link from "next/link";
 import { ThemeProvider } from "@/utils/theme-provider";
 
