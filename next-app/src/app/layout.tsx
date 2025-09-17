@@ -2,9 +2,9 @@ import "./globals.css";
 import type { Metadata } from "next";
 import Script from 'next/script';
 
-import SideNavBar from "@/components/navigation/SideNavBar";
+// import SideNavBar from "@/components/navigation/SideNavBar";
 import { Header } from "@/components/navigation/Header";
-import { OffCanvasNavBar } from "@/components/navigation/OffCanvasNavbar";
+// import { OffCanvasNavBar } from "@/components/navigation/OffCanvasNavbar";
 import Link from "next/link";
 import { ThemeProvider } from "@/utils/theme-provider";
 
@@ -27,10 +27,10 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           <div className="root-container container-fluid">
             <div className="page-wrapper row pb-2">
               <Header />
-              <div id="sidebar" className="border-end col-3 collapse m-0 show">
+              {/* <div id="sidebar" className="border-end col-3 collapse m-0 show">
                 <SideNavBar />
-              </div>
-              <OffCanvasNavBar />
+              </div> */}
+              {/* <OffCanvasNavBar /> */}
               {/* col - MAIN */}
               <div className="col d-flex pt-5 ps-0 pe-0">
                 <main className="w-100">
