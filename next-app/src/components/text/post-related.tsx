@@ -8,14 +8,16 @@ function PostDate({ date }: { date: string }) {
 }
 
 const PostHeader = ({ title, publishedDate }:
-  { title: string, publishedDate: string }) => {
+  { title: string, publishedDate?: string }) => {
   return (
-      <div className="row pb-2">
-        <div className="col-sm">
-          <h1 className="display-4">{title}&nbsp;</h1>
+    <div className="row pb-2">
+      <div className="col-sm">
+        <h1 className="display-4">{title}&nbsp;</h1>
+        {publishedDate &&
           <PostDate date={publishedDate} />
-        </div>
+        }
       </div>
+    </div>
   )
 }
 
