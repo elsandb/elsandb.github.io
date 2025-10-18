@@ -27,14 +27,14 @@ export default function ProjectsPage() {
           </div>
 
           {/* Card: XML Conversion */}
-          <div className="col-12 col-lg-5 mb-4">
+          {/* <div className="col-12 col-lg-5 mb-4">
             <ProjectCard
               projectTitle="XML Conversion"
               description="Automated conversion of XML to CSV format."
               imgSrc="/icons/xml-file-format.png"
               href="/projects/xml-to-csv-conversion"
             />
-          </div>
+          </div> */}
 
           {/* Card: Statistical Report Automation*/}
           {/* <div className="col-12 col-lg-6 mb-4">
