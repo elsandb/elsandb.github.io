@@ -1,7 +1,7 @@
 /**
  * Menu toggle buttons for the side navbar and the offcanvas navbar.
  */
-function MenuButtons() {
+export default function MenuButtons() {
   return (
     <div className="d-flex align-items-center">
       <div>
