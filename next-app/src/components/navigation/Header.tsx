@@ -1,15 +1,14 @@
 "use client";
 import { ThemeToggle } from "../ThemeToggle";
-import Link from "next/link";
 import { links } from "./links";
 import { NavLink } from "./NavLink";
 
 function Header() {
   return (
-    <nav className="navbar sticky-top navbar-dark bg-dark navbar-expand-lg">
-      <div className="container-fluid d-flex align-items-center justify-content-between">
-
-        <a className="navbar-brand me-auto" href="/">@elsandb</a>
+    <nav className="navbar sticky-top navbar-dark bg-dark navbar-expand-md">
+      <div className="container col-10 col-lg-8">
+        <ThemeToggle />
+        <a className="navbar-brand ps-4 mx-auto" href="/">@elsandb</a>
 
         <button
           className="navbar-toggler"
@@ -27,7 +26,7 @@ function Header() {
             {links.map((link) => <NavLink link={link} key={link.href} />)}
           </ul>
         </div>
-        <ThemeToggle />
+        
 
       </div>
     </nav>
@@ -35,16 +34,3 @@ function Header() {
 }
 
 export { Header };
-
-// /* <header className="border-bottom py-3 px-4 d-flex justify-content-between align-items-center">
-//   <Link className="text-decoration-none fs-4 text-light-emphasis" href="/">
-//     @elsandb
-//   </Link>
-//   <Link className="text-decoration-none fs-4 text-light-emphasis" href="/">
-//     Home
-//   </Link>
-//   <Link className="text-decoration-none fs-4 text-light-emphasis" href="/projects">
-//     Projects
-//   </Link>
-//   <ThemeToggle />
-// </header> */
