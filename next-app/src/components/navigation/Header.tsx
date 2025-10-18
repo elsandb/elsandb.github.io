@@ -7,8 +7,7 @@ function Header() {
   return (
     <nav className="navbar sticky-top navbar-dark bg-dark navbar-expand-md">
       <div className="container col-10 col-lg-8">
-        <ThemeToggle />
-        <a className="navbar-brand ps-4 mx-auto" href="/">@elsandb</a>
+        <a className="navbar-brand ps-4 me-auto" href="/">@elsandb</a>
 
         <button
           className="navbar-toggler"
@@ -24,10 +23,10 @@ function Header() {
         <div className="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
           <ul className="navbar-nav mx-auto">
             {links.map((link) => <NavLink link={link} key={link.href} />)}
+            <ThemeToggle />
           </ul>
         </div>
         
-
       </div>
     </nav>
   );
