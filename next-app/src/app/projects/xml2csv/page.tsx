@@ -1,15 +1,15 @@
 // app/projects/xml-to-csv/page.tsx
 import Lead from '@/components/text/lead';
 import SyntaxHighlighter from 'react-syntax-highlighter';
-import { hybrid, stackoverflowDark, stackoverflowLight } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+import { stackoverflowDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 
-const PythonCode = ({ codeString }: { codeString: string }) => {
-  return (
-    <SyntaxHighlighter language="python" style={stackoverflowDark}>
-      {codeString}
-    </SyntaxHighlighter>
-  );
-};
+// const PythonCode = ({ codeString }: { codeString: string }) => {
+//   return (
+//     <SyntaxHighlighter language="python" style={stackoverflowDark}>
+//       {codeString}
+//     </SyntaxHighlighter>
+//   );
+// };
 
 
 export default function XmlToCsvPage() {
