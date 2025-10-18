@@ -3,7 +3,7 @@ import { usePathname } from "next/navigation";
 import { LinkObj } from "./links";
 
 
-export function NavLink({ link, level = 1}: { link: LinkObj; level?: number;}) {
+export function NavLink({ link }: { link: LinkObj; }) {
   const pathname = usePathname();
   const isActive = pathname === link.href;
   return (
