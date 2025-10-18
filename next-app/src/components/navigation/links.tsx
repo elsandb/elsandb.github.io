@@ -16,10 +16,10 @@ export const links: LinkObj[] = [
     name: "PROJECTS",
     href: "/projects",
   },
-  {
-    name: "CONTACT",
-    href: "/contact",
-  },
+  // {
+  //   name: "CONTACT",
+  //   href: "/contact",
+  // },
   // {
   //   name: "Visualization",
   //   href: "/projects/visualize",
