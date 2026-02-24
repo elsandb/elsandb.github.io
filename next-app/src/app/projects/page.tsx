@@ -9,7 +9,7 @@ export default function ProjectsPage() {
     <div className="container">
       <PostHeader title="My Projects" />
       <Lead>
-        Here you&apos;ll find a selection of my recent projects. Each project showcases practical approaches to solving real-world problems using modern technologies and data processing techniques.
+        Here is one little project. More to come... maybe &#91;&equals;
       </Lead>
 
       {/* Projects cards */}
