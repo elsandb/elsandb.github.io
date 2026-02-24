@@ -9,7 +9,7 @@ export default function ProjectsPage() {
     <div className="container">
       <PostHeader title="My Projects" />
       <Lead>
-        Here is one little project. More to come... maybe &#91;&equals;
+        Here is one little project. More to come... maybe &#91;&#61;
       </Lead>
 
       {/* Projects cards */}
